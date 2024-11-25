@@ -88,7 +88,7 @@
 <header class="site-header techin-header-section" id="sticky-menu">
     <div class="techin-header-wrapper">
         <div class="header-logo">
-            <a href='index.html'>
+            <a href='/'>
                 <img src="{{ brand:dark_logo }}" alt="logo" width="250px">
             </a>
         </div>
@@ -140,80 +140,20 @@
                     <nav class="navbar site-navbar">
                         <nav class="main-menu menu-style1 d-none d-xl-block">
                             <ul>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Demo</a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href='index.html'>
-                                                Home 01
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='index-02.html'>
-                                                Home 02
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='index-03.html'>
-                                                Home 03
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href='about-us.html'>About Us</a></li>
-                                        <li><a href='pricing.html'>Pricing</a></li>
-                                        <li class="menu-item-has-children">
-                                            <a class="no-border" href="#">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href='blog.html'>Blog</a></li>
-                                                <li><a href='blog-grid.html'>Blog grid</a></li>
-                                                <li><a href='single-blog.html'>Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a class="no-border" href="#">Portfolio</a>
-                                            <ul class="sub-menu">
-                                                <li><a href='portfolio.html'>Portfolio</a></li>
-                                                <li><a href='single-portfolio.html'>Portfolio details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a class="no-border" href="#">Team</a>
-                                            <ul class="sub-menu">
-                                                <li><a href='team.html'>team</a></li>
-                                                <li><a href='single-team.html'>team details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a class="no-border" href="#">Utility</a>
-                                            <ul class="sub-menu">
-                                                <li><a href='faq.html'>faq</a></li>
-                                                <li><a href='errors-404.html'>errors 404</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Service</a>
-                                    <ul class="sub-menu">
-                                        <li><a href='service.html'>Service</a></li>
-                                        <li><a href='single-service.html'>Service Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href='blog.html'>Blog</a></li>
-                                        <li><a href='blog-grid.html'>Blog grid</a></li>
-                                        <li><a href='single-blog.html'>Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href='contact-us.html'>Contact Us</a>
-                                </li>
+                                {{ nav:main_nav }}
+                                        {{ if children }}
+                                            <li class="menu-item-has-children">
+                                                <a href="javascript:void(0);">{{ title }}</a>
+                                                <ul class="sub-menu">
+                                                    {{ children }}
+                                                        <li><a href='{{ url }}'>{{ title }}</a></li>
+                                                    {{ /children }}
+                                                </ul>
+                                            </li>
+                                        {{ else }}
+                                            <li><a href='{{ url }}'>{{ title }}</a></li>
+                                        {{ /if }}
+                                {{ /nav:main_nav }}
                             </ul>
                         </nav>
                     </nav>

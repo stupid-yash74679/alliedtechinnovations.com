@@ -2,3 +2,7 @@ name: admin
 super: true
 id: 3f11124e-18b2-4dcb-95fc-b115fb42f412
 password_hash: $2y$12$8iNUlqW.9f4z6bLb/iE2mOfVEOiArxbAM631iOP.UiJpHi.iid35q
+preferences:
+  collections:
+    solutions:
+      after_save: create_another
