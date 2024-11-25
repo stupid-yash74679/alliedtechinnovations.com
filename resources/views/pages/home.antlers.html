@@ -91,20 +91,20 @@
             <div class="col-lg-7">
                 <div class="techin-about-content">
                     <div class="techin-title-tag">
-                        <h6>About Us</h6>
+                        <h6>{{ about_tagline }}</h6>
                     </div>
-                    <h2>Empowering Your Business With <span class="title">techin</span> IT Solutions</h2>
+                    <h2>{{ about_heading }}</h2>
                     <div class="techin-about-thumb-one">
-                        <img src="/assets/images/v3/about-us.png" alt="">
+                        <img src="{{ about_image_1 }}" alt="">
                     </div>
                 </div>
             </div>
             <div class="col-lg-5">
                 <div class="pl-50">
                     <div class="techin-about-video-thumb">
-                        <img src="/assets/images/v3/video-thumb.png" alt="">
+                        <img src="{{ about_image_2 }}" alt="">
                         <div class="techin-about-video-icon">
-                            <a class="techin-popup-video4 video-init" href="https://www.youtube.com/watch?v=zE_WFiHnSlY">
+                            <a class="techin-popup-video4 video-init" href="{{ about_video_link }}">
                                 <img src="/assets/images/v3/video-icon.svg" alt="">
                                 <div class="waves waves4 wave-1"></div>
                                 <div class="waves waves4 wave-2"></div>
@@ -112,7 +112,7 @@
                             </a>
                         </div>
                     </div>
-                    <p class="techin-about-text">At Techin, we deliver innovative IT solutions that empower businesses in the digital age. Our team provides strategies, robust support, and cutting-edge technology tailored to your needs, ensuring efficiency, security, and reliability.</p>
+                    <p class="techin-about-text">{{ about_description }}</p>
                 </div>
             </div>
         </div>
