@@ -9028,7 +9028,7 @@ input::placeholder, textarea::placeholder {
     text-align: left;
     color: var(--white-color);
     font-family: Ubuntu, sans-serif;
-    background: linear-gradient(90deg, rgba(47, 43, 235, .4) 0, #2f2beb 100%)
+    background: linear-gradient(45deg, rgba(251, 171, 37, 0.2) 0, rgba(251, 171, 37, 0.6) 0)
 }
 
 @media (max-width: 767px) {
@@ -10381,7 +10381,7 @@ button#techin-subscription-btn {
 }
 
 #techin-submit-btn.techin-header-btn, .techin-default-btn.techin-header-btn {
-    font-size: 24px;
+    font-size: 18px;
     padding: 17px 37px;
     color: var(--heading-color);
     background-color: var(--accent-bg2)

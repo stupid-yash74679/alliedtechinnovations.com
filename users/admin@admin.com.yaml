@@ -6,3 +6,12 @@ preferences:
   collections:
     solutions:
       after_save: create_another
+  forms:
+    enquiries:
+      columns:
+        - datestamp
+        - name
+        - phone_number
+        - email
+        - solution
+        - message

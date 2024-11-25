@@ -1,14 +1,13 @@
-<div class="techin-hero-section-three" style="background-image: url(/assets/images/hero/hero3.png)">
+<div class="techin-hero-section-three" style="background-image: url({{ hero_image }})">
     <div class="container">
         <div class="techin-hero-content3">
             <div class="techin-hero-tag tag3">
-                <img src="/assets/images/hero/shape1.svg" alt="">
-                Get Best IT Solution Business
+                {{ hero_tagline }}
             </div>
-            <h1>Empowering Digital Transformation</h1>
-            <p>At TechIn, we deliver innovative and reliable IT solutions tailored to meet your unique business needs.</p>
-            <a class='techin-default-btn' data-text='Get Start Now' href='contact-us.html'>
-                <span class="button-wraper">Get Start Now</span>
+            <h1>{{ hero_headline }}</h1>
+            <p>{{ hero_description }}</p>
+            <a class='techin-default-btn' data-text='Get Start Now' href='{{ hero_button_link:url }}'>
+                <span class="button-wraper">{{ hero_button_text }}</span>
             </a>
         </div>
     </div>
@@ -16,47 +15,45 @@
 <div class="container">
     <div class="techin-appointment-box-bg">
         <div class="techin-appointment-box3">
-            <form action="#">
+            {{ form:create in="enquiries" }}
                 <div class="row">
-                    <div class="col-xl-4 col-md-6">
+                    <div class="col-md-4">
                         <div class="techin-main-field field3">
-                            <input type="text" placeholder="Your Name">
-                            <img src="/assets/images/v1/a1.svg" alt="">
+                            <input type="text" placeholder="Your Name" name="name">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6">
+                    <div class="col-md-4">
                         <div class="techin-main-field field3 ">
-                            <input type="email" placeholder="Enter Email">
-                            <img src="/assets/images/v1/a2.svg" alt="">
+                            <input type="email" placeholder="Your Email" name="email">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6">
+                    <div class="col-md-4">
+                        <div class="techin-main-field field3 ">
+                            <input type="text" placeholder="Your Phone Number" name="phone_number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <div class="teching-slect-wrapper ">
-                            <select class="techin-a-select wrapper2 mt-0">
-                                <option data-display="Select Service">Only Option</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="4">Potato</option>
+                            <select class="techin-a-select wrapper2 mt-0" name="solution">
+                                <option value="null" data-display="I'm Looking for">Select Solution</option>
+                                {{ collection:solutions }}
+                                    <option value="{{ "I'm Looking for " + title }}" data-display="{{ "I'm Looking for " + title }}">{{ title }}</option>
+                                {{ /collection:solutions }}
                             </select>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="techin-main-field field3 field5 mb-20">
-                            <input type="date" id="birthday" name="birthday">
+                    <div class="col-md-6">
+                        <div class="techin-main-field field3">
+                            <input type="text" placeholder="Message" name="message">
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="techin-main-field field3 field5 mb-20">
-                            <input type="time" id="appt" name="appt">
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <button id="techin-submit-btn" class="btn2" type="submit" data-text="Make An Appointment">
-                            <span class="button-wraper">Make An Appointment</span>
+                    <div class="col-md-12">
+                        <button id="techin-submit-btn" class="btn2" type="submit" data-text="Send">
+                            <span class="button-wraper">Get Quote Now</span>
                         </button>
                     </div>
                 </div>
-            </form>
+            {{ /form:create }}
         </div>
     </div>
 </div>
@@ -68,9 +65,7 @@
             <div class="col-lg-7">
                 <div class="techin-about-content">
                     <div class="techin-title-tag">
-                        <span><img src="/assets/images/v1/shape1.svg" alt=""></span>
                         <h6>About Us</h6>
-                        <span><img src="/assets/images/v1/shape1.svg" alt=""></span>
                     </div>
                     <h2>Empowering Your Business With <span class="title">techin</span> IT Solutions</h2>
                     <div class="techin-about-thumb-one">
