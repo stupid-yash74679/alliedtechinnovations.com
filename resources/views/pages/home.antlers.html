@@ -125,13 +125,14 @@
         <div class="techin-section-title center">
             <div class="techin-title-tag center2">
                 <span><img src="/assets/images/v1/shape1.svg" alt=""></span>
-                <h6>Our Service</h6>
+                <h6>{{ solutions_tagline }}</h6>
                 <span><img src="/assets/images/v1/shape1.svg" alt=""></span>
             </div>
-            <h2>Our Unique And Awesome Services</h2>
+            <h2>{{ solutions_heading }}</h2>
         </div>
         <div class="row">
-            <div class="col-xl-4 col-md-6">
+            {{ solutions_top_solutions }}
+                <div class="col-xl-4 col-md-6">
                 <div class="techin-service-wrap3">
                     <div class="techin-service-thumb">
                         <img src="/assets/images/v2/s1.png" alt="">
@@ -141,50 +142,15 @@
                         </div>
                     </div>
                     <div class="techin-service-content2">
-                        <h5>IT Management</h5>
-                        <p>Comprehensive management of your IT infrastructure, network monitoring, security, minimal downtime.</p>
-                        <a class='techin-default-btn techin-service-btn2' data-text='Read More' href='about-us.html'>
+                        <h5>{{ title }}</h5>
+                        <p>{{ content }}</p>
+                        <a class='techin-default-btn techin-service-btn2' data-text='Read More' href='{{ url }}'>
                             <span class="button-wraper">Read More</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="techin-service-wrap3">
-                    <div class="techin-service-thumb">
-                        <img src="/assets/images/v2/s2.png" alt="">
-                        <div class="techin-service-icon3">
-                            <img class="techin-service-icon-show" src="/assets/images/v3/icon-white2.svg" alt="">
-                            <img class="techin-service-icon-hide" src="/assets/images/v3/icon-dark2.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="techin-service-content2">
-                        <h5>IT Management</h5>
-                        <p>Comprehensive management of your IT infrastructure, network monitoring, security, minimal downtime.</p>
-                        <a class='techin-default-btn techin-service-btn2' data-text='Read More' href='about-us.html'>
-                            <span class="button-wraper">Read More</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="techin-service-wrap3">
-                    <div class="techin-service-thumb">
-                        <img src="/assets/images/v2/s3.png" alt="">
-                        <div class="techin-service-icon3">
-                            <img class="techin-service-icon-show" src="/assets/images/v3/icon-white3.svg" alt="">
-                            <img class="techin-service-icon-hide" src="/assets/images/v3/icon-dark3.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="techin-service-content2">
-                        <h5>Cybersecurity</h5>
-                        <p>Comprehensive management of your IT infrastructure, network monitoring, security, minimal downtime.</p>
-                        <a class='techin-default-btn techin-service-btn2' data-text='Read More' href='about-us.html'>
-                            <span class="button-wraper">Read More</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            {{ /solutions_top_solutions }}
         </div>
     </div>
 </div>
