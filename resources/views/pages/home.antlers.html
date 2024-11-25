@@ -53,7 +53,33 @@
                         </button>
                     </div>
                 </div>
+
             {{ /form:create }}
+            <!-- Success Message -->
+            {{ form:success in="enquiries" }}
+                <script>
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Your message has been sent successfully.',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    }).then(() => {
+                        window.location.href = '/'; // Optional redirect after success
+                    });
+                </script>
+            {{ /form:success }}
+
+            <!-- Error Message -->
+            {{ form:failure in="enquiries"  }}
+                <script>
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong. Please try again.',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                </script>
+            {{ /form:failure }}
         </div>
     </div>
 </div>
