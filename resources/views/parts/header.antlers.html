@@ -98,13 +98,10 @@
                     <div class="techin-header-info">
                         <ul>
                             <li>
-                                <a href="tel:123"><img src="/assets/images/blog/phone.svg" alt="phone logo"> (+999) 123 98765</a>
+                                <a href="tel:{{ brand:phone_number }}"><img src="/assets/images/blog/phone.svg" alt="phone logo"> {{ brand:phone_number }}</a>
                             </li>
                             <li>
-                                <a href="mailto:name@email.com"><img src="/assets/images/blog/gmail.svg" alt="gmail logo"> info@techin.com</a>
-                            </li>
-                            <li>
-                                <a href="mailto:name@email.com"><img src="/assets/images/blog/gmail.svg" alt="gmail logo"> Mon-Fri: 10:00Am-09:00Pm</a>
+                                <a href="mailto:{{ brand:email }}"><img src="/assets/images/blog/gmail.svg" alt="gmail logo"> {{ brand:email }}</a>
                             </li>
                         </ul>
                     </div>
@@ -266,8 +263,8 @@
     <div class="techin-sidemenu-column">
         <div class="techin-sidemenu-body">
             <div class="techin-sidemenu-logo">
-                <a href='index.html'>
-                    <img src="/assets/images/logo/logo1.svg" alt="">
+                <a href='/'>
+                    <img src="{{ brand:dark_logo }}" width="250px" alt="">
                 </a>
             </div>
             <p>“TechIN completely transformed our IT infrastructure. Their team was knowledgeable, responsive, and solutions that improved our efficiency. Highly recommended!”</p>
@@ -278,13 +275,14 @@
                 <div class="techin-contact-info">
                     <i class="ri-map-pin-2-fill"></i>
                     <h5>Address</h5>
-                    <p>12th Street, New York, USA</p>
+                    <p>{{ brand:long_address }}</p>
                 </div>
                 <div class="techin-contact-info">
                     <a href="mailto:name@gmail.com">
                         <img src="/assets/images/blog/gmail.svg" alt="">
                         <h5>Contact</h5>
-                        <p>info@techin.com</p>
+                        <p>{{ brand:email }}</p>
+                        <p>{{ brand:phone_number }}</p>
                     </a>
                 </div>
             </div>

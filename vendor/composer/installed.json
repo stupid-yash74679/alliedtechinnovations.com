@@ -399,17 +399,17 @@
         },
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.14.7",
-            "version_normalized": "3.14.7.0",
+            "version": "v3.14.8",
+            "version_normalized": "3.14.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "f484b8c9124de0b163da39958331098ffcd4a65e"
+                "reference": "6a09266c89802946fb15d5f2f74906d48734a7b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/f484b8c9124de0b163da39958331098ffcd4a65e",
-                "reference": "f484b8c9124de0b163da39958331098ffcd4a65e",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/6a09266c89802946fb15d5f2f74906d48734a7b5",
+                "reference": "6a09266c89802946fb15d5f2f74906d48734a7b5",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                 "phpunit/phpunit": "^9.6|^10.5",
                 "squizlabs/php_codesniffer": "^3.5"
             },
-            "time": "2024-11-14T09:12:35+00:00",
+            "time": "2024-11-25T12:49:44+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -470,7 +470,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.14.7"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.14.8"
             },
             "funding": [
                 {
