@@ -304,7 +304,6 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
             'AltDesign\\AltRedirect\\' => 22,
             'AltDesign\\AltPasswordProtect\\' => 29,
             'AltDesign\\AltInbound\\' => 21,
-            'AltDesign\\AltCookiesAddon\\' => 26,
             'AltDesign\\AltAkismet\\' => 21,
         ),
     );
@@ -774,10 +773,6 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         array (
             0 => __DIR__ . '/..' . '/alt-design/alt-inbound/src',
         ),
-        'AltDesign\\AltCookiesAddon\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/alt-design/alt-cookies/src',
-        ),
         'AltDesign\\AltAkismet\\' => 
         array (
             0 => __DIR__ . '/..' . '/alt-design/alt-akismet/src',
@@ -814,10 +809,6 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         'AltDesign\\AltAkismet\\Helpers\\HandleSubmission' => __DIR__ . '/..' . '/alt-design/alt-akismet/src/Helpers/HandleSubmission.php',
         'AltDesign\\AltAkismet\\Http\\Controllers\\AltAkismetController' => __DIR__ . '/..' . '/alt-design/alt-akismet/src/Http/Controllers/AltAkismetController.php',
         'AltDesign\\AltAkismet\\ServiceProvider' => __DIR__ . '/..' . '/alt-design/alt-akismet/src/ServiceProvider.php',
-        'AltDesign\\AltCookiesAddon\\Helpers\\Data' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/Helpers/Data.php',
-        'AltDesign\\AltCookiesAddon\\Http\\Controllers\\AltCookiesController' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/Http/Controllers/AltCookiesController.php',
-        'AltDesign\\AltCookiesAddon\\ServiceProvider' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/ServiceProvider.php',
-        'AltDesign\\AltCookiesAddon\\Tags\\AltCookies' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/Tags/AltCookies.php',
         'AltDesign\\AltInbound\\Helpers\\Data' => __DIR__ . '/..' . '/alt-design/alt-inbound/src/Helpers/Data.php',
         'AltDesign\\AltInbound\\Http\\Controllers\\AltInboundController' => __DIR__ . '/..' . '/alt-design/alt-inbound/src/Http/Controllers/AltInboundController.php',
         'AltDesign\\AltInbound\\Http\\Middleware\\CheckForBlocks' => __DIR__ . '/..' . '/alt-design/alt-inbound/src/Http/Middleware/CheckForBlocks.php',
@@ -2434,7 +2425,9 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         'Illuminate\\Console\\Scheduling\\CommandBuilder' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/CommandBuilder.php',
         'Illuminate\\Console\\Scheduling\\Event' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/Event.php',
         'Illuminate\\Console\\Scheduling\\EventMutex' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/EventMutex.php',
+        'Illuminate\\Console\\Scheduling\\ManagesAttributes' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ManagesAttributes.php',
         'Illuminate\\Console\\Scheduling\\ManagesFrequencies' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ManagesFrequencies.php',
+        'Illuminate\\Console\\Scheduling\\PendingEventAttributes' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/PendingEventAttributes.php',
         'Illuminate\\Console\\Scheduling\\Schedule' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/Schedule.php',
         'Illuminate\\Console\\Scheduling\\ScheduleClearCacheCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleClearCacheCommand.php',
         'Illuminate\\Console\\Scheduling\\ScheduleFinishCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleFinishCommand.php',
@@ -2725,6 +2718,7 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         'Illuminate\\Database\\Eloquent\\MassPrunable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/MassPrunable.php',
         'Illuminate\\Database\\Eloquent\\MissingAttributeException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/MissingAttributeException.php',
         'Illuminate\\Database\\Eloquent\\Model' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/Model.php',
+        'Illuminate\\Database\\Eloquent\\ModelInspector' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/ModelInspector.php',
         'Illuminate\\Database\\Eloquent\\ModelNotFoundException' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/ModelNotFoundException.php',
         'Illuminate\\Database\\Eloquent\\PendingHasThroughRelationship' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/PendingHasThroughRelationship.php',
         'Illuminate\\Database\\Eloquent\\Prunable' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Database/Eloquent/Prunable.php',
@@ -7691,6 +7685,7 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         'Statamic\\Http\\Controllers\\CP\\Collections\\CollectionBlueprintsController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/CollectionBlueprintsController.php',
         'Statamic\\Http\\Controllers\\CP\\Collections\\CollectionTreeController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/CollectionTreeController.php',
         'Statamic\\Http\\Controllers\\CP\\Collections\\CollectionsController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/CollectionsController.php',
+        'Statamic\\Http\\Controllers\\CP\\Collections\\EditRedirectController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/EditRedirectController.php',
         'Statamic\\Http\\Controllers\\CP\\Collections\\EntriesController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/EntriesController.php',
         'Statamic\\Http\\Controllers\\CP\\Collections\\EntryActionController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/EntryActionController.php',
         'Statamic\\Http\\Controllers\\CP\\Collections\\EntryPreviewController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Collections/EntryPreviewController.php',
@@ -7705,6 +7700,7 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         'Statamic\\Http\\Controllers\\CP\\CpController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/CpController.php',
         'Statamic\\Http\\Controllers\\CP\\DashboardController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/DashboardController.php',
         'Statamic\\Http\\Controllers\\CP\\DuplicatesController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/DuplicatesController.php',
+        'Statamic\\Http\\Controllers\\CP\\FieldActionModalController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/FieldActionModalController.php',
         'Statamic\\Http\\Controllers\\CP\\Fields\\BlueprintController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Fields/BlueprintController.php',
         'Statamic\\Http\\Controllers\\CP\\Fields\\FieldsController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Fields/FieldsController.php',
         'Statamic\\Http\\Controllers\\CP\\Fields\\FieldsetController' => __DIR__ . '/..' . '/statamic/cms/src/Http/Controllers/CP/Fields/FieldsetController.php',
