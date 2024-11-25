@@ -9112,17 +9112,6 @@ input::placeholder, textarea::placeholder {
     }
 }
 
-.techin-hero-section-three::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: rgba(2, 1, 53, .8)
-}
-
 .techin-hero-content3 {
     position: relative;
     max-width: 645px;
