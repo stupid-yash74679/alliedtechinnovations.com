@@ -120,5 +120,6 @@ return array(
     'AltDesign\\AltRedirect\\' => array($vendorDir . '/alt-design/alt-redirect/src'),
     'AltDesign\\AltPasswordProtect\\' => array($vendorDir . '/alt-design/alt-password-protect/src'),
     'AltDesign\\AltInbound\\' => array($vendorDir . '/alt-design/alt-inbound/src'),
+    'AltDesign\\AltCookiesAddon\\' => array($vendorDir . '/alt-design/alt-cookies/src'),
     'AltDesign\\AltAkismet\\' => array($vendorDir . '/alt-design/alt-akismet/src'),
 );

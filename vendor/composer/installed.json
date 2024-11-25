@@ -112,6 +112,51 @@
             "install-path": "../alt-design/alt-akismet"
         },
         {
+            "name": "alt-design/alt-cookies",
+            "version": "v1.1.7",
+            "version_normalized": "1.1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alt-design/Alt-Cookies-Addon.git",
+                "reference": "9cd71bc2259d8a2780c993eb30edec7c4b8fbfe0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alt-design/Alt-Cookies-Addon/zipball/9cd71bc2259d8a2780c993eb30edec7c4b8fbfe0",
+                "reference": "9cd71bc2259d8a2780c993eb30edec7c4b8fbfe0",
+                "shasum": ""
+            },
+            "time": "2024-09-17T13:24:10+00:00",
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Alt Cookies",
+                    "description": "Alt Cookies"
+                },
+                "laravel": {
+                    "providers": [
+                        "AltDesign\\AltCookiesAddon\\ServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "AltDesign\\AltCookiesAddon\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Helps handle scripts and cookies on your Statamic site",
+            "support": {
+                "issues": "https://github.com/alt-design/Alt-Cookies-Addon/issues",
+                "source": "https://github.com/alt-design/Alt-Cookies-Addon/tree/v1.1.7"
+            },
+            "install-path": "../alt-design/alt-cookies"
+        },
+        {
             "name": "alt-design/alt-inbound",
             "version": "v1.1.0",
             "version_normalized": "1.1.0.0",

@@ -304,6 +304,7 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
             'AltDesign\\AltRedirect\\' => 22,
             'AltDesign\\AltPasswordProtect\\' => 29,
             'AltDesign\\AltInbound\\' => 21,
+            'AltDesign\\AltCookiesAddon\\' => 26,
             'AltDesign\\AltAkismet\\' => 21,
         ),
     );
@@ -773,6 +774,10 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         array (
             0 => __DIR__ . '/..' . '/alt-design/alt-inbound/src',
         ),
+        'AltDesign\\AltCookiesAddon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alt-design/alt-cookies/src',
+        ),
         'AltDesign\\AltAkismet\\' => 
         array (
             0 => __DIR__ . '/..' . '/alt-design/alt-akismet/src',
@@ -809,6 +814,10 @@ class ComposerStaticInitc2fdab2e8995acbbba30e261791a46f8
         'AltDesign\\AltAkismet\\Helpers\\HandleSubmission' => __DIR__ . '/..' . '/alt-design/alt-akismet/src/Helpers/HandleSubmission.php',
         'AltDesign\\AltAkismet\\Http\\Controllers\\AltAkismetController' => __DIR__ . '/..' . '/alt-design/alt-akismet/src/Http/Controllers/AltAkismetController.php',
         'AltDesign\\AltAkismet\\ServiceProvider' => __DIR__ . '/..' . '/alt-design/alt-akismet/src/ServiceProvider.php',
+        'AltDesign\\AltCookiesAddon\\Helpers\\Data' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/Helpers/Data.php',
+        'AltDesign\\AltCookiesAddon\\Http\\Controllers\\AltCookiesController' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/Http/Controllers/AltCookiesController.php',
+        'AltDesign\\AltCookiesAddon\\ServiceProvider' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/ServiceProvider.php',
+        'AltDesign\\AltCookiesAddon\\Tags\\AltCookies' => __DIR__ . '/..' . '/alt-design/alt-cookies/src/Tags/AltCookies.php',
         'AltDesign\\AltInbound\\Helpers\\Data' => __DIR__ . '/..' . '/alt-design/alt-inbound/src/Helpers/Data.php',
         'AltDesign\\AltInbound\\Http\\Controllers\\AltInboundController' => __DIR__ . '/..' . '/alt-design/alt-inbound/src/Http/Controllers/AltInboundController.php',
         'AltDesign\\AltInbound\\Http\\Middleware\\CheckForBlocks' => __DIR__ . '/..' . '/alt-design/alt-inbound/src/Http/Middleware/CheckForBlocks.php',
