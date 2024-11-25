@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="398bbe06-fc8c-4c5c-8b53-323571f7a7bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.antlers.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.antlers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/footer.antlers.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/footer.antlers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parts/header.antlers.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parts/header.antlers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732532516872</updated>
-      <workItem from="1732532518237" duration="4612000" />
+      <workItem from="1732532518237" duration="4971000" />
     </task>
     <servers />
   </component>
