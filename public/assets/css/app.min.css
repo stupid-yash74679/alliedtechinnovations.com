@@ -2220,7 +2220,7 @@ a.techin-header-info img {
     font-size: 24px;
     margin-bottom: 15px;
     line-height: 24px;
-    color: var(--accent-color2)
+    color: #000
 }
 
 .techin-contact-info h5 {
@@ -2721,26 +2721,6 @@ ul.sub-menu li a:hover::before {
 
 .techin-header-info {
     position: relative
-}
-
-.techin-header-info::before {
-    content: "";
-    top: 2px;
-    left: 27%;
-    width: 1px;
-    height: 20px;
-    position: absolute;
-    border-right: 1px solid var(--body-color)
-}
-
-.techin-header-info::after {
-    content: "";
-    top: 2px;
-    left: 60%;
-    width: 1px;
-    height: 20px;
-    position: absolute;
-    border-right: 1px solid var(--body-color)
 }
 
 .techin-header-info-wrap {
@@ -6991,7 +6971,6 @@ ul.sub-menu li a:hover::before {
 }
 
 .blog-content3 {
-    background: var(--light-color);
     border-radius: 10px;
     border: 1px solid var(--light-color2);
     padding: 40px 40px 0 40px;
@@ -7056,7 +7035,7 @@ ul.sub-menu li a:hover::before {
     left: 40px;
     top: -35px;
     transition: all .4s;
-    background-color: var(--accent-bg)
+    background-color: var(--accent-color)
 }
 
 .blog-date-wrap2 .blog-year {
@@ -10356,7 +10335,6 @@ button#techin-subscription-btn {
 }
 
 #techin-submit-btn.techin-cta-btn, .techin-default-btn.techin-cta-btn {
-    color: var(--heading-color) !important;
     background-color: var(--accent-bg2)
 }
 
