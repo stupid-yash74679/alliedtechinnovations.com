@@ -3217,30 +3217,10 @@ ul.sub-menu li a:hover::before {
     }
 }
 
-.techin-footer-info-wraper::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 37%;
-    width: 1px;
-    height: 60px;
-    border-right: 1px solid var(--heading-color)
-}
-
 @media (max-width: 1399px) {
     .techin-footer-info-wraper::before {
         display: none
     }
-}
-
-.techin-footer-info-wraper::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 69%;
-    width: 1px;
-    height: 60px;
-    border-right: 1px solid var(--heading-color)
 }
 
 @media (max-width: 1399px) {
@@ -11464,4 +11444,7 @@ a.techin-comment-reply i path {
     100% {
         transform: translate(24px, 0)
     }
+}
+.text-justify {
+    text-align: justify !important;
 }

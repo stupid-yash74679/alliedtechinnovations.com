@@ -151,27 +151,6 @@
         </div>
         <div class="techin-footer-info2">
             <div class="techin-footer-info-wraper">
-                <div class="techin-footer-info-item">
-                    <div class="techin-footer-info-icon">
-                        <img src="/assets/images/footer/icon1.svg" alt="">
-                    </div>
-                    <div class="techin-footer-info-text info1">
-                        <span>Office Address</span>
-                        <h5>12th Street, New York, USA</h5>
-                    </div>
-                </div>
-                <a href="mailto:name@gmail.com">
-                    <div class="techin-footer-info-item">
-                        <div class="techin-footer-info-icon">
-                            <img src="/assets/images/footer/icon2.svg" alt="">
-                        </div>
-                        <div class="techin-footer-info-text info1">
-                            <span>Email Address</span>
-                            <h5>info@techin.com</h5>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="tel:009">
                     <div class="techin-footer-info-item">
                         <div class="techin-footer-info-icon">
@@ -179,10 +158,31 @@
                         </div>
                         <div class="techin-footer-info-text info1">
                             <span>Call Us For Support</span>
-                            <h5>+(009) 1888 000 2222</h5>
+                            <h5>{{ brand:phone_number }}</h5>
                         </div>
                     </div>
                 </a>
+                <a href="mailto:name@gmail.com">
+                    <div class="techin-footer-info-item">
+                        <div class="techin-footer-info-icon">
+                            <img src="/assets/images/footer/icon2.svg" alt="">
+                        </div>
+                        <div class="techin-footer-info-text info1">
+                            <span>Email Address</span>
+                            <h5>{{ brand:email }}</h5>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="techin-footer-info-item">
+                    <div class="techin-footer-info-icon">
+                        <img src="/assets/images/footer/icon1.svg" alt="">
+                    </div>
+                    <div class="techin-footer-info-text info1">
+                        <span>Office Address</span>
+                        <h5>{{ brand:long_address }}</h5>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="techin-footer-bottom bottom2">

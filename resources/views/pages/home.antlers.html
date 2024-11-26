@@ -180,88 +180,37 @@
             <div class="col-lg-6 order-lg-2">
                 <div class="techin-faq-wrap2">
                     <div class="techin-title-tag">
-                        <h6>Why Choose Us</h6>
+                        <h6>{{ wcs_tagline }}</h6>
                     </div>
-                    <h2>We Provide Truly Prominent IT Solutions.</h2>
-                    <p class="text">At Techin, we are dedicated to delivering innovative IT solutions and services that empower businesses to thrive in the digital age. With a team of experienced professionals, we provide customized technology strategies, robust support, and cutting-edge solutions tailored to your unique needs.</p>
-                    <div class="techin-skill-wraper">
-                        <div class="techin-skill-icon">
-                            <img src="/assets/images/v3/icon2.svg" alt="">
-                        </div>
-                        <div class="techin-skill-icon2">
-                            <img src="/assets/images/v3/icon3.svg" alt="">
-                        </div>
-                        <div class="techin-skill-wrap">
-                            <div class="techin-skill-item">
-                                <div class="techin-skill-title">
-                                    <h6>IT Management</h6>
-                                </div>
-                                <div class="techin-skill-line">
-                                    <div class="techin-skill-bar bar-one"></div>
-                                </div>
-                            </div>
-                            <div class="techin-skill-item">
-                                <div class="techin-skill-title">
-                                    <h6>Data Security</h6>
-                                </div>
-                                <div class="techin-skill-line">
-                                    <div class="techin-skill-bar bar-two"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2>{{ wcs_heading }}</h2>
+                    <img class="mb-20" src="{{ wcs_image }}"/>
+                    <p class="text text-justify">{{ wcs_description }}</p>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="techin-faq-wrap1">
-                    <div class="techin-faq-item open">
-                        <div class="techin-faq-header">
-                            <h6>What services does TechIn offer?</h6>
-                            <div class="techin-active-icon">
-                                <img src="/assets/images/v1/top-arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="techin-faq-body body2">
-                            <p>Our consulting process typically starts with an initial consultation to understand your business needs and challenges. We then conduct a thorough analysis, develop a tailored strategy, and work closely with you to implement the solutions. We provide continuous support and monitor progress to ensure long-term success.</p>
-                        </div>
-                    </div>
+                    {{ wcs_faqs }}
+                    {{ if index == 0 }}
+                        <div class="techin-faq-item open">
+                            {{ else }}
                     <div class="techin-faq-item">
+                        {{ /if }}
                         <div class="techin-faq-header">
-                            <h6>How does the consulting process work?</h6>
+                            <h6>{{ wcs_faqs_question}}</h6>
                             <div class="techin-active-icon">
                                 <img src="/assets/images/v1/top-arrow.svg" alt="">
                             </div>
                         </div>
-                        <div class="techin-faq-body body2">
-                            <p>Our consulting process typically starts with an initial consultation to understand your business needs and challenges. We then conduct a thorough analysis, develop a tailored strategy, and work closely with you to implement the solutions. We provide continuous support and monitor progress to ensure long-term success.</p>
+                        <div class="techin-faq-body body2 text-justify">
+                            <p>{{ wcs_faqs_answer }}</p>
                         </div>
                     </div>
-                    <div class="techin-faq-item">
-                        <div class="techin-faq-header">
-                            <h6>How can I get started with TechIn?</h6>
-                            <div class="techin-active-icon">
-                                <img src="/assets/images/v1/top-arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="techin-faq-body body2">
-                            <p>Our consulting process typically starts with an initial consultation to understand your business needs and challenges. We then conduct a thorough analysis, develop a tailored strategy, and work closely with you to implement the solutions. We provide continuous support and monitor progress to ensure long-term success.</p>
-                        </div>
-                    </div>
-                    <div class="techin-faq-item">
-                        <div class="techin-faq-header">
-                            <h6>Do you offer virtual consulting services?</h6>
-                            <div class="techin-active-icon">
-                                <img src="/assets/images/v1/top-arrow.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="techin-faq-body body2">
-                            <p>Our consulting process typically starts with an initial consultation to understand your business needs and challenges. We then conduct a thorough analysis, develop a tailored strategy, and work closely with you to implement the solutions. We provide continuous support and monitor progress to ensure long-term success.</p>
-                        </div>
-                    </div>
+                    {{ /wcs_faqs }}
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- end faq -->
 
