@@ -9500,7 +9500,7 @@ input::placeholder, textarea::placeholder {
     text-align: left;
     border-radius: 20px;
     padding: 20px;
-    background-color: var(--accent-bg);
+    background: var(--accent-bg);
     overflow: hidden;
     transform: translatey(0);
     -webkit-animation: updown 3s ease-in-out infinite;
