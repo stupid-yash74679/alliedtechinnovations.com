@@ -1,0 +1,90 @@
+<main id="main">
+
+    <!-- Header Section -->
+    <section class="page-section bg-gray-light-1 bg-light-alpha-90 parallax-5" style="background-image: url(/assets/images/full-width-images/section-bg-1.jpg)" id="home">
+        <div class="container position-relative pt-30 pt-sm-50">
+
+            <!-- Section Content -->
+            <div class="text-center">
+                <div class="row">
+
+                    <!-- Page Title -->
+                    <div class="col-md-8 offset-md-2">
+
+                        <h1 class="hs-title-1 mb-20">
+                            <span class="wow charsAnimIn" data-splitting="chars">Blog</span>
+                        </h1>
+
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                                <p class="section-descr mb-0 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1.2s">
+                                    Discovering our brilliant insights and inspiration.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End Page Title -->
+
+                </div>
+            </div>
+            <!-- End Section Content -->
+
+        </div>
+    </section>
+    <!-- End Header Section -->
+
+
+    <!-- Section -->
+    <section class="page-section">
+        <div class="container relative">
+
+            <!-- Search Form -->
+            <div class="mb-60 mb-sm-40">
+                <form class="form">
+                    <div class="search-wrap">
+                        <button class="search-button animate" type="submit" title="Start Search">
+                            <i class="mi-search size-18"></i> <span class="visually-hidden">Start search</span>
+                        </button>
+                        <input type="text" class="form-control input-lg search-field round" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+            <!-- End Search Form -->
+
+            <!-- Blog Posts Grid -->
+            <div class="row mt-n30 mb-60 mb-sm-40">
+                {{ collection:blogs }}
+                <!-- Post Item -->
+                    <div class="post-prev col-md-6 col-lg-4 mt-30">
+                    <div class="post-prev-container">
+
+                        <div class="post-prev-img">
+                            <a href="{{ url }}"><img src="{{ thumbnail_image }}" alt="{{ thumbnail_image:alt }}"/></a>
+                        </div>
+
+                        <h4 class="post-prev-title"><a href="{{ url }}">{{ title }}</a></h4>
+
+                        <div class="post-prev-text">{{ content }}</div>
+
+                        <div class="post-prev-info clearfix">
+                            <div class="float-start">
+                                <a href="#"><img class="post-prev-author-img" width="30" height="30" src="/assets/images/blog/author/author-1.jpg" alt="Image Description"></a><a href="#">{{ author:name }}</a>
+                            </div>
+                            <div class="float-end"><a href="{{ url }}">{{ date }}</a></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Post Item -->
+                {{ /collection:blogs }}
+
+            </div>
+            <!-- End Blog Posts Grid -->
+
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+</main>
