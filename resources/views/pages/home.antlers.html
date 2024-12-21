@@ -19,7 +19,7 @@
                                 At Allied Tech Innovations, we provide customized technology strategies, robust support, and cutting-edge solutions tailored to your unique needs.
                             </p>
                             <div class="local-scroll mt-n10 wow fadeInUp wch-unset" data-wow-delay="0.7s" data-wow-duration="1.2s" data-wow-offset="0">
-                                <a href="main-pages-contact-1.html" class="btn btn-mod btn-large btn-round btn-hover-anim align-middle me-2 me-sm-5 mt-10"><span>Discover now</span></a>
+                                <a href="/contact" class="btn btn-mod btn-large btn-round btn-hover-anim align-middle me-2 me-sm-5 mt-10"><span>Discover now</span></a>
                                 <a href="https://www.youtube.com/watch?v=jTea_8Fk5Ns" class="link-hover-anim align-middle lightbox mfp-iframe mt-10" data-link-animate="y"><i class="icon-play size-13 me-1"></i> How it works?</a>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                     <div class="decoration-2 d-none d-md-block" data-rellax-y="" data-rellax-speed="0.7" data-rellax-percentage="-0.2">
                         <img src="/assets/images/decoration-2.svg" alt="">
                     </div>
-                    <a href="main-pages-about-1.html" class="link-hover-anim underline align-middle" data-link-animate="y">Learn More <i class="mi-arrow-right size-18"></i></a>
+                    <a href="/contact" class="link-hover-anim underline align-middle" data-link-animate="y">Learn More <i class="mi-arrow-right size-18"></i></a>
                 </div>
             </div>
             <div class="row wow fadeInUp" data-wow-delay="0.5s">
@@ -302,7 +302,7 @@
                         We deliver innovative solutions that drive business growth for our clients.
                     </p>
                     <div class="local-scroll wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="main-pages-contact-1.html" class="btn btn-mod btn-w btn-large btn-round btn-hover-anim"><span>Request Price</span></a>
+                        <a href="/contact" class="btn btn-mod btn-w btn-large btn-round btn-hover-anim"><span>Request Price</span></a>
                     </div>
                 </div>
 
@@ -366,7 +366,7 @@
                         Design empowers us to solve complex challenges and deliver effective business solutions.
                     </p>
                     <div class="local-scroll">
-                        <a href="main-pages-contact-1.html" class="btn btn-mod btn-large btn-round btn-hover-anim"><span>Contact Us</span></a>
+                        <a href="/contact" class="btn btn-mod btn-large btn-round btn-hover-anim"><span>Contact Us</span></a>
                     </div>
                 </div>
             </div>
@@ -718,7 +718,7 @@
                         </div>
 
                         <div class="local-scroll">
-                            <a href="main-pages-contact-1.html" class="btn btn-mod btn-large btn-round btn-hover-anim"><span>Start a Project</span></a>
+                            <a href="/contact" class="btn btn-mod btn-large btn-round btn-hover-anim"><span>Start a Project</span></a>
                         </div>
 
                     </div>
@@ -858,7 +858,7 @@
                 </div>
 
                 <div class="col-md-5 offset-md-1 text-start text-md-end pt-40 pt-sm-20">
-                    <a href="main-blog-columns-2col.html" class="link-hover-anim underline align-middle" data-link-animate="y"> Read more in our blog <i class="mi-arrow-right size-18"></i></a>
+                    <a href="/blogs" class="link-hover-anim underline align-middle" data-link-animate="y"> Read more in our blog <i class="mi-arrow-right size-18"></i></a>
                 </div>
 
             </div>
@@ -866,80 +866,25 @@
             <!-- Blog Posts Grid -->
             <div class="row mt-n50">
 
-                <!-- Post Item -->
-                <div class="post-prev col-md-6 col-lg-4 mt-50 wow fadeInLeft" data-wow-delay="0.1s">
+                {{ collection:blogs }}
+                    <!-- Post Item -->
+                         <div class="post-prev col-md-6 col-lg-4 mt-50 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="post-prev-container">
 
                         <div class="post-prev-img">
-                            <a href="main-blog-single-sidebar-right.html"><img src="/assets/images/blog/post-prev-1.jpg" alt="Add Image Description"></a>
+                            <a href="{{ url }}"><img src="{{ thumbnail_image }}" alt="Add Image Description"></a>
                         </div>
 
-                        <h4 class="post-prev-title"><a href="main-blog-single-sidebar-right.html">Spotlight — Equinox Collection by Shane Griffin</a></h4>
+                        <h4 class="post-prev-title"><a href="{{ url }}">{{ title }}</a></h4>
 
                         <div class="post-prev-text">
-                            Looking for inspiration to kick it off, I stumbled across the work of Shane Griffin, an artist and director based in New York...
-                        </div>
-
-                        <div class="post-prev-info clearfix">
-                            <div class="float-start">
-                                <a href="#"><img class="post-prev-author-img" width="30" height="30" src="/assets/images/blog/author/author-1.jpg" alt="Image Description"></a><a href="#">Adam Smith</a>
-                            </div>
-                            <div class="float-end"><a href="#">August 3</a></div>
+                            {{ content }}
                         </div>
 
                     </div>
                 </div>
-                <!-- End Post Item -->
-
-                <!-- Post Item -->
-                <div class="post-prev col-md-6 col-lg-4 mt-50 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="post-prev-container">
-
-                        <div class="post-prev-img">
-                            <a href="main-blog-single-sidebar-right.html"><img src="/assets/images/blog/post-prev-2.jpg" alt="Add Image Description"></a>
-                        </div>
-
-                        <h4 class="post-prev-title"><a href="main-blog-single-sidebar-right.html">Random Explorations with Cinema 4D and Redshift</a></h4>
-
-                        <div class="post-prev-text">
-                            Nidia Dias is a 3D designer based in the Portugal with an incredible portfolio. From the professional work done with...
-                        </div>
-
-                        <div class="post-prev-info clearfix">
-                            <div class="float-start">
-                                <a href="#"><img class="post-prev-author-img" width="30" height="30" src="/assets/images/blog/author/author-2.jpg" alt="Image Description"></a><a href="#">Emma Kandel</a>
-                            </div>
-                            <div class="float-end"><a href="#">August 2</a></div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End Post Item -->
-
-                <!-- Post Item -->
-                <div class="post-prev col-md-6 col-lg-4 mt-50 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="post-prev-container">
-
-                        <div class="post-prev-img">
-                            <a href="main-blog-single-sidebar-right.html"><img src="/assets/images/blog/post-prev-3.jpg" alt="Add Image Description"></a>
-                        </div>
-
-                        <h4 class="post-prev-title"><a href="main-blog-single-sidebar-right.html">Visually Identity and Branding for Mexican Restaurant</a></h4>
-
-                        <div class="post-prev-text">
-                            Anta Petrenco shared a beautiful visual identity, branding and packaging design project on their Behance profile...
-                        </div>
-
-                        <div class="post-prev-info clearfix">
-                            <div class="float-start">
-                                <a href="#"><img class="post-prev-author-img" width="30" height="30" src="/assets/images/blog/author/author-3.jpg" alt="Image Description"></a><a href="#">Thomas Johnson</a>
-                            </div>
-                            <div class="float-end"><a href="#">August 1</a></div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End Post Item -->
+                    <!-- End Post Item -->
+                {{ /collection:blogs }}
 
             </div>
             <!-- End Blog Posts Grid -->
