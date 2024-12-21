@@ -30,14 +30,12 @@
                     <!-- Footer Widget -->
                     <div class="col-sm-4 mt-30">
 
-                        <h3 class="fw-title">Company</h3>
+                        <h3 class="fw-title">Our Services</h3>
 
                         <ul class="fw-menu clearlist">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            {{ collection:solutions }}
+                                <li><a href="{{ url }}">{{ title }}</a></li>
+                            {{ /collection:solutions }}
                         </ul>
 
                     </div>
