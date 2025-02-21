@@ -1,5 +1,21 @@
 # Changelog
 
+## v3.14.9 - 2024-11-25
+
+### What's Changed
+
+* Fix custom prototype array by @barryvdh in https://github.com/barryvdh/laravel-debugbar/pull/1706
+
+**Full Changelog**: https://github.com/barryvdh/laravel-debugbar/compare/v3.14.8...v3.14.9
+
+## v3.14.8 - 2024-11-25
+
+### What's Changed
+
+* Add fix + failing test for custom array prototype by @barryvdh in https://github.com/barryvdh/laravel-debugbar/pull/1705
+
+**Full Changelog**: https://github.com/barryvdh/laravel-debugbar/compare/v3.14.7...v3.14.8
+
 ## v3.14.7 - 2024-11-14
 
 ### What's Changed

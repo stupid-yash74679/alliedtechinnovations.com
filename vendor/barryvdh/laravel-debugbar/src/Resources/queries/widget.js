@@ -84,7 +84,7 @@
             const $explainButton = $('<a>Visual Explain</a>')
                 .addClass(csscls('visual-explain'))
                 .on('click', () => {
-                    if (!confirm(statement.explain['visual-confirm'])) return;
+                    if (!confirm(confirmMessage)) return;
                     fetch(statement.explain.url, {
                         method: "POST",
                         body: JSON.stringify({
@@ -343,7 +343,7 @@
             const $li = $('<li />').addClass(csscls('table-list-item'));
             const $muted = $('<span />').addClass(css('text-muted'));
 
-            values.forEach((value, i) => {
+            $.each(values, (i, value) => {
                 if (showLineNumbers) {
                     $ul.append($li.clone().append([$muted.clone().text(`${i}:`), '&nbsp;', $('<span/>').text(value)]));
                 } else {
